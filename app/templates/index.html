@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Metabolic Pathway Class Prediction</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js" integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css" integrity="sha512-hj9rznBPdFg9A4fACbJcp4ttzdinMDtPrtZ3gBD11DiY3O1xJfn0r1U5so/J0zwfGOzq9teIaH5rFmjFAFw8SA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./static/css/stylesheet.css" />
+        <script src="./static/js/style.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark header">
+            <a class="navbar-brand tag" href="#">Metabolic Pathway Class Prediction</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <div class='about'>
+            <fieldset class="border" >
+                <legend class ='text-center'><b style="font-weight: 300px;">About</b></legend>
+                <div class="innerPara">
+                    The KEGG database contains 11 pathway classes under metabolism that describe molecular interaction and reaction networks and are manually curated.<br>
+                    The 11 pathway classes are identified as follows. <br>
+                    <ol style="margin-top: 10px;">
+                        <li>Carbohydrate metabolism</li>
+                        <li>Energy metabolism,</li>
+                        <li>Lipid metabolism</li>
+                        <li>Nucleotide metabolism</li>
+                        <li>Amino acid metabolism</li>
+                        <li>Metabolism of other amino acids</li>
+                        <li>Glycan biosynthesis and metabolism</li>
+                        <li>Metabolism of cofactors and vitamins</li>
+                        <li>Metabolism of terpenoids and polyketides</li>
+                        <li>Biosynthesis of other secondary metabolites</li>
+                        <li>Xenobiotics biodegradation and metabolism</li>
+                    </ol>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="form-outline" id="form">
+            <div class="qry">Query</div>
+            <input type="search" id="form1" class="form-control" placeholder="Type query" aria-label="Search" />
+        </div>
+
+        <div class="polaroid" id="disp">
+            <img alt="molecule" id="image">
+            <div class="container">
+                <p id="name"></p>
+            </div>
+        </div>
+
+        <div id="txtsize">Enter your query as SMILES string</div>
+
+        <footer class="page-footer font-medium header" id="footer">
+            <div class="text-center py-3">By Team-6</div>
+        </footer>
+    </body>
+</html>
